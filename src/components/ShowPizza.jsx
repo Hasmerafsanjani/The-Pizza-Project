@@ -27,7 +27,6 @@ function ShowPizza() {
 
       try {
         const response = await axios.request(options);
-        console.log('Fetched Product Data:', response.data);
         setAllData(response.data.productos);
       } catch (error) {
         setError(error.message);

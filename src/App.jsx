@@ -15,34 +15,34 @@ import axios from 'axios'
      const [allData, setaAlldata] = useState(null)
      const [error, seterror] = useState(null)
 
-    useEffect(()=>{
+    // useEffect(()=>{
 
-      const fetchData = async () => {
-        const options = {
-          method: 'GET',
-          url: 'https://pizzaallapala.p.rapidapi.com/productos',
-          headers: {
-            'X-RapidAPI-Key': '3441f2735emsh1334ac1d9514be0p1201bdjsnda4285cd56d3',
-            'X-RapidAPI-Host': 'pizzaallapala.p.rapidapi.com'
-          }
-        };
+    //   const fetchData = async () => {
+    //     const options = {
+    //       method: 'GET',
+    //       url: 'https://pizzaallapala.p.rapidapi.com/productos',
+    //       headers: {
+    //         'X-RapidAPI-Key': '3441f2735emsh1334ac1d9514be0p1201bdjsnda4285cd56d3',
+    //         'X-RapidAPI-Host': 'pizzaallapala.p.rapidapi.com'
+    //       }
+    //     };
   
-        try {
-          const response = await axios.request(options);
-          console.log('Fetched Product Data:', response.data);
-          setaAlldata(response.data); 
+    //     try {
+    //       const response = await axios.request(options);
+    //       console.log('Fetched Product Data:', response.data);
+    //       setaAlldata(response.data); 
           
-        } catch (error) {
-          seterror(error.message);
-        }
-        //  finally {
-        //   setLoading(false);
-        // }
-      };
+    //     } catch (error) {
+    //       seterror(error.message);
+    //     }
+    //     //  finally {
+    //     //   setLoading(false);
+    //     // }
+    //   };
 
   
-      fetchData();
-    },[])
+    //   fetchData();
+    // },[])
 
 
   return (
