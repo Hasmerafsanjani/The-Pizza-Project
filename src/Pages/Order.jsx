@@ -1,8 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Order() {
+  
+  const navigation = useNavigate(false)
 
   const orderCompleted=()=>{
+    navigation("/succefull")
 
   }
   return (
@@ -60,7 +64,7 @@ function Order() {
         <input type="checkbox" />
       </div>
         </div>
-      <button className='bg-green-500 p-2 ml-4 rounded-2xl font-bold text-xl w-[350px] flex justify-center ' onClick={orderCompleted} > Complete Order </button>
+      <button className='bg-green-500 p-2 ml-4 rounded-2xl font-bold text-xl w-[350px] flex justify-center'  onClick={orderCompleted}> Complete Order </button>
       </div>
       </div>
       <img src="https://c4.wallpaperflare.com/wallpaper/1017/647/742/food-pizza-still-life-hd-wallpaper-preview.jpg" alt=""
