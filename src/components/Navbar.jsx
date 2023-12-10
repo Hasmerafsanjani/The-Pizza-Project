@@ -1,7 +1,9 @@
 import React from 'react'
 import { FaFacebook, FaInstagramSquare, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  const navigate = useNavigate(null)
   return (
     <div className="bg-white p-2 h-screen fixed w-[20%] flex flex-col justify-between items-center">
     
@@ -17,7 +19,9 @@ function Navbar() {
       <nav className="mb-8">
         <ul className='gap-3'>
           <li className="mb-2">
-            <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">
+            <a href="#" 
+            className="text-cyan-600 hover:text-red-700 font-bold"
+            >
               HOME
             </a>
           </li>

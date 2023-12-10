@@ -23,7 +23,7 @@ function HeroSecton() {
             placeholder="Enter Your Email"
             className="w-64 px-4 py-2 rounded-l-md focus:outline-none text-black focus:ring focus:border-red-400"
           />
-          <button className="bg-green-500 text-white px-8 py-2 rounded-r-md hover:bg-red-600 transition duration-300">
+          <button className="bg-green-500 text-white font-bold px-8 py-2 rounded-r-md hover:bg-red-600 transition duration-300">
             Subscribe
           </button>
         </div>
