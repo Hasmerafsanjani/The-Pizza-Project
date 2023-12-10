@@ -6,10 +6,12 @@ import Menu from './Pages/Menu'
 import PageNotFound from './Pages/PageNotFound'
 import Order from './Pages/Order'
 import OrderSuccess from './Pages/OrderSuccess'
+import WorkInprogress from './Pages/WorkInprogress'
 import axios from 'axios'
 
 
 
+  
   function App() {
     
      const [allData, setaAlldata] = useState(null)
@@ -53,6 +55,7 @@ import axios from 'axios'
       <Route path='/menu' element={<Menu/>}/>
       <Route path='/order' element={<Order/>}/>
       <Route path='/succefull' element={<OrderSuccess/>}/>
+      <Route path='/progress' element={<WorkInprogress/>}/>
       <Route path='/*' element={<PageNotFound/>}/>
     </Routes>
     </BrowserRouter>

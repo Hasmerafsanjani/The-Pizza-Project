@@ -1,8 +1,11 @@
 import React, { useState , useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
+useNavigate
 
 function Menu() {
   const [allData, setAllData] = useState([]);
   const [error, setError] = useState(null);
+  const navigation = useNavigate()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,6 +31,12 @@ function Menu() {
     fetchData();
   }, []);
 
+  const goToHome = ()=>{
+    navigation('/')
+  }
+  const workinProgress = ()=>{
+    navigation("/progress")
+  }
   const myData = allData.slice(0, 12);
   // console.log(myData);
 
@@ -40,18 +49,19 @@ function Menu() {
         />
        <div className=' flex justify-center'>
         <div className='flex items-center gap-4 pl-6'>
-          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold">HOME</p>
-          <p className="text-cyan-600 hover:text-red-700 text-xs font-bold">PAGES</p>
-          <p className="text-cyan-600 hover:text-red-700 text-xs font-bold">MENU</p>
-          <p className="text-cyan-600 hover:text-red-700 text-xs font-bold">EVENTS</p>
-          <p className="text-cyan-600 hover:text-red-700 text-xs font-bold">BLOG</p>
-          <p className="text-cyan-600 hover:text-red-700 text-xs font-bold">LANGING</p>
+          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold" onClick={goToHome}>HOME</p>
+          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold" >MENU</p>
+          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold" onClick={workinProgress}   >PAGES</p>
+          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold" onClick={workinProgress}  >EVENTS</p>
+          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold" onClick={workinProgress}  >BLOG</p>
+          <p className="text-cyan-600 cursor-pointer hover:text-red-700 text-xs font-bold" onClick={workinProgress}  >LANGING</p>
         </div>
        </div>
-       <div className='flex items-center pr-5 gap-2'>
-         🔍<input type="text" />
-         🛒
-       </div>
+       <div className='flex items-center cursor-pointer pr-5 gap-2'>
+        <p className='cursor-pointer'> 🛒</p>
+       <input type="text" />
+       <p>  🔍</p>
+       </div> 
       </div>
       <div className='bg-red-600 h-96 pt-36 '>
              <p className='italic text-center text-xl tracking-wider text-yellow-100'>Chose Your Favarite One</p>

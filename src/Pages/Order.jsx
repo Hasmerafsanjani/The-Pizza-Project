@@ -12,7 +12,7 @@ function Order() {
   return (
     <div
     className="bg-cover bg-center h-screen blur-5 flex justify-between "
-    style={{ backgroundImage: `url(https://i.pinimg.com/1200x/52/ff/40/52ff401df7f40fac0478f3dba0dace93.jpg)` }}
+    style={{ backgroundImage: `url(https://i.pinimg.com/1200x/52/ff/40/52ff401df7f40fac0478f3dba0dace93.jpg)`}}
     >
       <div className=''>
       <div className='h-[470px] w-[380px] bg-slate-200 bg-opacity-70 rounded overflow-hidden ml-16 mt-10'> 

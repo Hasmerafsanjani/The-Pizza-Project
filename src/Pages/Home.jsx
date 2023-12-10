@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import HeroSecton from '../components/HeroSecton';
 
 
-function Home({home}) {
+function Home({}) {
   
   return (
     <>

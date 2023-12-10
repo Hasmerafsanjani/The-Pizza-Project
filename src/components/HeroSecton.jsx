@@ -5,9 +5,10 @@ import ShowPizza from './ShowPizza';
 function HeroSecton() {
   return (
 
-    <div className="body-container bg-gray-700 w-[80%] ml-[20%] h-[90%] flex flex-col    items-center">
-    
-    <section className="bg-gray-700 text-white flex h-full justify-between">
+    <div className="body-container bg-gray-700 w-[80%] ml-[20%] h-[100%] flex flex-col  items-center"
+    style={{ backgroundImage: `url(https://img.freepik.com/premium-photo/selective-focus-close-up-piece-double-cheese-homemade-seafood-pizza-spatula-scoop-with-blur-background-wooden-table-cold-beverage-brick-wall-food-concept_102814-3650.jpg?w=2000)`}}
+    >
+    <section className=" text-white flex h-full justify-between">
     
       <div className='flex h-screen m-5 pt-10'>
       <div className='flex flex-col justify-center'>

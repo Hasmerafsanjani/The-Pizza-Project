@@ -8,6 +8,12 @@ function Navbar() {
   const handleMenu = ()=>{
     navigate ("/menu")
   }
+  const handelPage = ()=>{
+    navigate('/progress')
+  }
+  const workinProgress = ()=>{
+    navigate('/progress')
+  }
   return (
     <div className="bg-white p-2 h-screen fixed w-[20%] flex flex-col justify-between items-center">
     
@@ -29,28 +35,22 @@ function Navbar() {
               HOME
             </a>
           </li>
-          <li className="mb-2">
-            <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">
-              PAGES
-            </a>
-          </li>
           <li className="text-cyan-600 hover:text-red-700 mb-2 cursor-pointer font-bold" onClick={handleMenu}>
               MENU
           </li>
-          <li className="mb-2">
-            <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">
+          <li className="text-cyan-600 hover:text-red-700 mb-2 cursor-pointer font-bold" onClick={handelPage}>
+           
+              PAGES
+           
+          </li>
+          <li className="text-cyan-600 hover:text-red-700 mb-2 cursor-pointer font-bold" onClick={workinProgress} >
               EVENTS
-            </a>
           </li>
-          <li className="mb-2">
-            <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">
+          <li className="text-cyan-600 hover:text-red-700 mb-2 cursor-pointer font-bold" onClick={workinProgress}>
               BLOG
-            </a>
           </li>
-          <li className="mb-2">
-            <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">
+          <li className="text-cyan-600 hover:text-red-700 mb-2 cursor-pointer font-bold" onClick={workinProgress} >
               LANGING
-            </a>
           </li>
         </ul>
       </nav>
