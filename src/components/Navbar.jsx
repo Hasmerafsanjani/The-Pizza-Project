@@ -3,7 +3,11 @@ import { FaFacebook, FaInstagramSquare, FaLinkedin, FaTwitter } from 'react-icon
 import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-  const navigate = useNavigate(null)
+  const navigate = useNavigate(false)
+
+  const handleMenu = ()=>{
+    navigate ("/menu")
+  }
   return (
     <div className="bg-white p-2 h-screen fixed w-[20%] flex flex-col justify-between items-center">
     
@@ -30,10 +34,8 @@ function Navbar() {
               PAGES
             </a>
           </li>
-          <li className="mb-2">
-            <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">
+          <li className="text-cyan-600 hover:text-red-700 mb-2 cursor-pointer font-bold" onClick={handleMenu}>
               MENU
-            </a>
           </li>
           <li className="mb-2">
             <a href="#" className="text-cyan-600 hover:text-red-700 font-bold">

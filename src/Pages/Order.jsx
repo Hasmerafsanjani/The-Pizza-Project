@@ -7,10 +7,10 @@ function Order() {
   }
   return (
     <div
-    className="bg-cover bg-center h-screen blur-5 "
+    className="bg-cover bg-center h-screen blur-5 flex justify-between "
     style={{ backgroundImage: `url(https://i.pinimg.com/1200x/52/ff/40/52ff401df7f40fac0478f3dba0dace93.jpg)` }}
     >
-      <div className='absolute'>
+      <div className=''>
       <div className='h-[470px] w-[380px] bg-slate-200 bg-opacity-70 rounded overflow-hidden ml-16 mt-10'> 
         <h1 className='text-2xl font-bold text-center p-3 bg-cyan-800 text-white'> Welcom to Pizza Hut</h1>
         <div className='flex flex-col ml-5 '>
@@ -63,8 +63,8 @@ function Order() {
       <button className='bg-green-500 p-2 ml-4 rounded-2xl font-bold text-xl w-[350px] flex justify-center ' onClick={orderCompleted} > Complete Order </button>
       </div>
       </div>
-      <img src="https://clipart-library.com/images_k/pizza-slice-transparent-background/pizza-slice-transparent-background-19.jpg" alt=""
-      className='bg-transparent'
+      <img src="https://c4.wallpaperflare.com/wallpaper/1017/647/742/food-pizza-still-life-hd-wallpaper-preview.jpg" alt=""
+      className='bg-transparent rounded-full h-[90%] w-[90%] mt-6'
       />
        </div>
   )
